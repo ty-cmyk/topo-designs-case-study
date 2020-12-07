@@ -1,0 +1,71 @@
+/***
+* Component Library
+* Developed By: Tyler Mann
+***/
+:root {
+    --font-sans-serif: 'Source Sans Pro', sans-serif;
+    --red: #E31B23;
+    --dark-red: #C8171E;
+    --black: #191919;
+    --light-grey: #C8C8C8;
+    --white: #FFF;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+    font-family: var(--font-sans-serif);
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-sans-serif);
+    line-height: 1.2;
+    font-weight: 800;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+h4 {
+    font-size: 1.05rem;
+}
+h5 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+a {
+    color: var(--red);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--dark-red);
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+}
+
+.component img {
+    max-width: initial;
+}
+.component__img {
+    border: 1px solid #C8C8C8;
+    overflow-x: auto;
+}
+.component__code {
+    border: 1px solid #C8C8C8;
+}
+
