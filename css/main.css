@@ -20,6 +20,7 @@ html {
 body {
     font-family: var(--font-sans-serif);
     line-height: 1.65;
+    letter-spacing: 0.5px;
     font-size: 16px;
     font-weight: 300;
     color: var(--black);
@@ -78,6 +79,8 @@ body {
         text-transform: uppercase;
         font-size: .87em;
     }
+
+    /* Inline Links */
     a {
         color: var(--red);
         text-decoration: none;
@@ -156,6 +159,8 @@ body {
     .main-nav a:hover i{
         color: var(--black);
     }
+
+    /* Right Nav */
     .right-nav {
         height: 112px;
         display: inline;
@@ -186,26 +191,49 @@ body {
         text-decoration: underline;
     }
     
-/**** END Main Nav Styles ****/
+/**** END Header Nav Styles ****/
 
-/* Buttons */
 
-.btn {
-    background-color: var(--black);
-    border-radius: 12px;
-    padding: 15px;
-    color: var(--white);
-    text-decoration: none;
-}
+/**** 
+--Atoms--
+****/
 
-.btn--outlined {
-    background-color: transparent;
-    border: 1px solid var(--black);
-    color: var(--black);
-}
+    /* Buttons */
 
-.btn--primary {
-    background-color: var(--red);
-    border: 1px solid var(--red);
-    color: var(--black);
-}
+    .btn {
+        background-color: var(--black);
+        padding: 15px;
+        color: var(--white);
+        text-decoration: none;
+        text-transform: uppercase;
+        
+    }
+
+    .btn--black {
+        border: 1px solid var(--black);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.87rem;
+    }
+
+    .btn--outlined {
+        background-color: transparent;
+        border: 1px solid var(--black);
+        color: var(--black);
+        padding: .8rem 4.5rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .btn--primary {
+        background-color: var(--red);
+        border: 1px solid var(--red);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.87rem;
+    }
+    p {
+        padding: 1rem;
+    }
+
+/**** END Atom Styles ****/
