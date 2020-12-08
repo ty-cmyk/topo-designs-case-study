@@ -2,7 +2,9 @@
 * Component Library
 * Developed By: Tyler Mann
 ***/
-:root {
+
+
+html {
     --font-sans-serif: 'Source Sans Pro', sans-serif;
     --red: #E31B23;
     --dark-red: #C8171E;
@@ -17,55 +19,193 @@
 }
 body {
     font-family: var(--font-sans-serif);
-    line-height: 1.5;
+    line-height: 1.65;
     font-size: 16px;
     font-weight: 300;
+    color: var(--black);
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: var(--font-sans-serif);
-    line-height: 1.2;
-    font-weight: 800;
-}
-h1 {
-    text-transform: uppercase;
-    font-size: 3.5rem;
-}
-h2 {
-    font-size: 3rem;
-}
-h3 {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-}
-h4 {
-    font-size: 1.05rem;
-}
-h5 {
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-a {
-    color: var(--red);
+/**** 
+--COMPONENT PAGE SYSTEM Styles-- 
+****/
+
+    img {
+        display: block;
+    }
+
+    .component img {
+        max-width: initial;
+    }
+    .component__img {
+        border: 1px solid #C8C8C8;
+        overflow-x: auto;
+    }
+    .component__code {
+        border: 1px solid #C8C8C8;
+    }
+/**** END Component Page System Styles ****/
+
+/**** 
+--TYPOGRAPHY-- 
+****/
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-sans-serif);
+        line-height: 1.2;
+        font-weight: 800;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+    h4 {
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+    h5 {
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    h6 {
+        text-transform: uppercase;
+        font-size: .87em;
+    }
+    a {
+        color: var(--red);
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--dark-red);
+        text-decoration: underline;
+    }
+/**** END Typography Styles ****/
+
+
+/**** 
+--HEADER NAVS--
+****/
+
+    .container {
+        margin: 0 25px;
+        padding: 0 15px;
+    }
+    .img-screenshot {
+        max-width: 900px;
+        margin: 20px;
+    }
+
+    /* Logo */
+    .site-logo {
+        margin: 0;
+        padding: 0 60px 0 0;
+        max-width: 115px;
+    }
+
+    .site-logo img {
+        padding: 10px 0 10px;
+    }
+
+    /* Nav */
+    .nav-bar {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-nav {
+        height: 112px;
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        align-items: center;
+    }
+
+    .main-nav--list {
+        display: inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+    }
+
+    .main-nav__item a{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        text-align: left;
+        display: block;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: var(--black);
+        padding: 0 5px;
+    }
+
+    .main-nav a:hover{
+        color: var(--red);
+    }
+    .main-nav a:hover i{
+        color: var(--black);
+    }
+    .right-nav {
+        height: 112px;
+        display: inline;
+        align-items: center;
+    }
+    .right-nav--list {
+        display: inline-flex;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .right-nav__item {
+        display: inline;
+    }
+    .right-nav__item a{
+        font-size: 1.25rem;
+        text-align: left;
+        text-decoration: none;
+        color: var(--black);
+        padding: 10px 15px;
+    }
+    .small-link a{
+        font-size: .87rem;
+        padding: 0;
+    }
+    .small-link a:hover {
+        text-decoration: underline;
+    }
+    
+/**** END Main Nav Styles ****/
+
+/* Buttons */
+
+.btn {
+    background-color: var(--black);
+    border-radius: 12px;
+    padding: 15px;
+    color: var(--white);
     text-decoration: none;
 }
-a:hover {
-    color: var(--dark-red);
-    text-decoration: underline;
+
+.btn--outlined {
+    background-color: transparent;
+    border: 1px solid var(--black);
+    color: var(--black);
 }
 
-img {
-    display: block;
+.btn--primary {
+    background-color: var(--red);
+    border: 1px solid var(--red);
+    color: var(--black);
 }
-
-.component img {
-    max-width: initial;
-}
-.component__img {
-    border: 1px solid #C8C8C8;
-    overflow-x: auto;
-}
-.component__code {
-    border: 1px solid #C8C8C8;
-}
-
