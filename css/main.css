@@ -143,9 +143,71 @@ body {
 
 
 /**** 
---HEADER NAVS--
+--ATOMS--
 ****/
 
+    /* Buttons */
+
+    .btn {
+        background-color: var(--black);
+        padding: 14px;
+        color: var(--white);
+        text-decoration: none;
+        text-transform: uppercase;
+        
+    }
+
+    .btn--black {
+        border: 1px solid var(--black);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding: 14px 20px;
+    }
+
+    .btn--outlined {
+        background-color: transparent;
+        border: 1px solid var(--black);
+        color: var(--black);
+        padding: .8rem 4.5rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .btn--primary {
+        background-color: var(--red);
+        border: 1px solid var(--red);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .btn-link {
+        padding: 1rem 0;
+    }
+    .btn--primary__hov a:hover {
+        background-color: var(--dark-red);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    .btn--outlined__hov a:hover {
+        background-color: var(--black);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    .btn--black__hov a:hover {
+        background-color: var(--black);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    
+
+/**** END Atom Styles ****/
+
+/**** 
+--Molecules--
+****/
+
+    /*** --Header Navs-- ***/
     .container {
         margin: 0 25px;
         padding: 0 15px;
@@ -191,7 +253,7 @@ body {
     }
 
     .main-nav__item a{
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: var(--font-sans-serif);
         font-weight: 700;
         font-size: 1.1em;
         text-transform: uppercase;
@@ -240,67 +302,28 @@ body {
     .small-link a:hover {
         text-decoration: underline;
     }
-    
-/**** END Header Nav Styles ****/
 
+    /**** END Header Nav Styles ****/
 
-/**** 
---ATOMS--
-****/
-
-    /* Buttons */
-
-    .btn {
-        background-color: var(--black);
-        padding: 14px;
-        color: var(--white);
-        text-decoration: none;
-        text-transform: uppercase;
-        
+    /* Medium Card Text Area */
+    .card-text__right {
+        text-align: right;
     }
-
-    .btn--black {
-        border: 1px solid var(--black);
-        color: var(--white);
-        font-weight: 600;
-        font-size: 0.8rem;
-        padding: 14px 20px;
+    .card-text__center {
+        text-align: center;
     }
-
-    .btn--outlined {
-        background-color: transparent;
-        border: 1px solid var(--black);
-        color: var(--black);
-        padding: .8rem 4.5rem;
-        font-weight: 700;
-        font-size: 1.1rem;
+    .card-header--medium {
+        margin: 0;
+        padding: 1.25rem 0;
     }
-
-    .btn--primary {
-        background-color: var(--red);
-        border: 1px solid var(--red);
-        color: var(--white);
-        font-weight: 600;
-        font-size: 0.8rem;
+    .card-header--hero {
+        max-width: 150px;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin: 0;
+        padding: 1.25rem 0;
     }
-    .btn-link {
-        padding: 1rem;
+    .card-subtext {
+        margin: 0;
+        padding:0;
     }
-    .btn--primary__hov a:hover {
-        background-color: var(--dark-red);
-        color: var(--white);
-        text-decoration: none; 
-    }
-    .btn--outlined__hov a:hover {
-        background-color: var(--black);
-        color: var(--white);
-        text-decoration: none; 
-    }
-    .btn--black__hov a:hover {
-        background-color: var(--black);
-        color: var(--white);
-        text-decoration: none; 
-    }
-    
-
-/**** END Atom Styles ****/
