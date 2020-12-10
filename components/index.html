@@ -14,9 +14,9 @@
 
 </head>
 <body>
-    <h1>Web Components</h1> 
+    <h1 class="page-header">Web Components</h1> 
 
-    <h2>Typography Defaults</h2>
+    <h2 class="component-section__header">Typography Defaults</h2>
 
     <article class="component">
         
@@ -30,7 +30,7 @@
 
         <div class="component__code">
             <p>
-                I love bikes. Biking gives me time to think. I race cyclocross in the fall with the <a href="#!">Topo Designs Cycling Club</a>. I'm enjoying more gravel rides lately, and live across the street from some of the best mountain biking around, right here in Fort Collins, Colorado. I'm currently listening to the brand new Waxahatchee album, but really prefer spinning vinyl with my wife & two girls in the evenings, it's so intentional. We'll play a healthy mix ranging from Michael Jackson, Harry Styles & Stan Getz to Brandi Carlile, Gregory Alan Isakov & Wilco.
+                I love bikes. Biking gives me time to think. I race cyclocross in the fall with the <a href="#!" class="link__active">Topo Designs Cycling Club</a>. I'm enjoying more gravel rides lately, and live across the street from some of the best mountain biking around, right here in Fort Collins, Colorado. I'm currently listening to the brand new Waxahatchee album, but really prefer spinning vinyl with my wife & two girls in the evenings, it's so intentional. We'll play a healthy mix ranging from Michael Jackson, Harry Styles & Stan Getz to Brandi Carlile, Gregory Alan Isakov & Wilco.
             </p>
         </div>
     </article>
@@ -69,8 +69,57 @@
             <h6>Shop</h6>
         </div>
     </article>
+
+    <article class="component">
+        
+        <h3 class="component__name">Global Inline Links</h3>
+       
+        <div class="component__img">
+            <img 
+            srcset= "img/link--inline__active--2x.png 2x"
+            src= "img/link--inline__active--2x.png" alt="inline link active">
+            <img 
+            srcset= "img/link--inline__hov--2x.png 2x"
+            src= "img/link--inline__hov--2x.png" alt="inline link hover">
+        </div>
+
+        <div class="component__code">
+            <p>
+                <a href="#!" class="link__active">Topo Designs Cycling Club</a>
+            </p>
+        </div>
+
+        <h3 class="component__name">Breadcrumb Links</h3>
+
+        <div class="component__img">
+            <img 
+            srcset= "img/link-map--2x.png 2x"
+            src= "img/link-map--2x.png" alt="bread-crumb link">
+        </div>
+        <div class="component__code">
+            <p class="bread-crumb bread-crumb__inactive">
+                <a href="#!" class="bread-crumb__active">Home / </a>All Bags & Accessories
+            </p>
+        </div>
+        
+        <h3 class="component__name">Footer Links</h3>
+
+        <div class="component__img">
+            <img 
+            srcset= "img/footer--link__active--2x.png 2x"
+            src= "img/footer--link__active--2x.png" alt="footer link active">
+            <img 
+            srcset= "img/footer--link__hov--2x.png 2x"
+            src= "img/footer--link__hov--2x.png" alt="footer link hover">
+        </div>
+        <div class="component__code">
+            <p class="footer--link__hov">
+                <a href="#!" class="footer--link__active">In The Wild Blog</a>
+            </p>
+        </div>
+    </article>
     
-    <h2>Atoms</h2>
+    <h2 class="component-section__header">Atoms</h2>
 
     <article class="component">
         
@@ -82,21 +131,21 @@
             src= "img/button__primary--2x.png" alt="button primary">
             <img 
             srcset= "img/button__secondary--2x.png 2x"
-            src= "img/button__secondary--2x.png" alt="button secondary">
+            src= "img/button__secondary--2x.png" alt="button outline">
             <img 
             srcset= "img/button__black--2x.png 2x"
-            src= "img/button__black--2x.png" alt="button secondary">
+            src= "img/button__black--2x.png" alt="button black">
             
         </div>
 
         <div class="component__code">
-            <p>
+            <p class="btn-link btn--primary__hov">
                 <a href="#!" class="btn btn--primary">Shop Gaitors</a>
             </p>
-            <p>
+            <p class="btn-link btn--outlined__hov">
                 <a href="#!" class="btn btn--outlined">Topo DNA</a>
             </p>
-            <p>
+            <p class="btn-link btn--black__hov">
                 <a href="#!" class="btn btn--black">Sign Up</a>
             </p>
         </div>
@@ -104,7 +153,7 @@
 
     
 
-    <h2>Header Navs</h2>
+    <h2 class="component-section__header">Molecules</h2>
 
     <article class="component">
         <h3 class="component__name">Logo & Main Nav</h3>
@@ -192,12 +241,38 @@
                     <!-- END Main Header -->
         </div>
     </article>
-    
-    <h2>Molecules</h2>
 
-    <h2>Organisms</h2>
+    <article class="component">
+        
+        <h3 class="component__name">Card Text Area</h3>
+       
+        <div class="component__img">
+            <img 
+            srcset= "img/card--medium__text--2x.png 2x"
+            src= "img/card--medium__text--2x.png" alt="card medium text">
+        </div>
 
-    <h2>Page Footer</h2>
+        <div class="component__code">
+            <p>
+                <a href="#!" class="link__active">Topo Designs Cycling Club</a>
+            </p>
+        </div>
+
+        <div class="component__img">
+            <img 
+            srcset= "img/link-map--2x.png 2x"
+            src= "img/link-map--2x.png" alt="body text">
+        </div>
+        <div class="component__code">
+            <p class="bread-crumb bread-crumb__inactive">
+                <a href="#!" class="bread-crumb__active">Home / </a>All Bags & Accessories
+            </p>
+        </div>
+    </article>
+
+    <h2 class="component-section__header">Organisms</h2>
+
+    <h2 class="component-section__header">Page Footer</h2>
 
 
 </body>

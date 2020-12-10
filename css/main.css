@@ -3,12 +3,15 @@
 * Developed By: Tyler Mann
 ***/
 
-
+/****
+--Global CSS variables--
+****/
 html {
     --font-sans-serif: 'Source Sans Pro', sans-serif;
     --red: #E31B23;
     --dark-red: #C8171E;
     --black: #191919;
+    --grey: #9E9E9E;
     --light-grey: #C8C8C8;
     --white: #FFF;
 }
@@ -21,15 +24,33 @@ body {
     font-family: var(--font-sans-serif);
     line-height: 1.65;
     letter-spacing: 0.5px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     color: var(--black);
 }
+/**** END Global CSS variables ****/
+
 
 /**** 
 --COMPONENT PAGE SYSTEM Styles-- 
 ****/
-
+    .page-header {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 2rem 0;
+        margin: 0;
+    }
+    .component {
+        border: 1px solid var(--red);
+        margin: 0 1rem 2rem;
+    }
+    .component__name {
+        font-size: 1.5rem;
+        color: var(--white);
+        background-color: var(--red);
+        padding: 1rem;
+        margin: 0;
+    }
     img {
         display: block;
     }
@@ -49,7 +70,7 @@ body {
 /**** 
 --TYPOGRAPHY-- 
 ****/
-
+    /* Headers (h1, h2, h3 ,h4, h5, h6) */
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-sans-serif);
         line-height: 1.2;
@@ -79,17 +100,46 @@ body {
         text-transform: uppercase;
         font-size: .87em;
     }
+/**** END Typography Styles ****/
 
-    /* Inline Links */
+
+/**** 
+--LINKS-- 
+****/
+
+    /* Global Inline Links */
     a {
         color: var(--red);
         text-decoration: none;
     }
-    a:hover {
+     a:hover {
         color: var(--dark-red);
         text-decoration: underline;
     }
-/**** END Typography Styles ****/
+    
+    /* Breadcrumb Links */
+    .bread-crumb {
+        font-size: .87rem;
+    }
+    .bread-crumb__active {
+        color: var(--black);
+        padding: 0 3px;
+    }
+    .bread-crumb__inactive {
+        color: var(--grey);
+    }
+
+    /* Footer Links */
+    .footer--link__active {
+        background-color: var(--black);
+        color: var(--light-grey);
+        font-size: .9 rem;
+    }
+    .footer--link__hov a:hover {
+        color: var(--white);
+        text-decoration: none;
+    }
+/**** END Link Styles ****/
 
 
 /**** 
@@ -195,14 +245,14 @@ body {
 
 
 /**** 
---Atoms--
+--ATOMS--
 ****/
 
     /* Buttons */
 
     .btn {
         background-color: var(--black);
-        padding: 15px;
+        padding: 14px;
         color: var(--white);
         text-decoration: none;
         text-transform: uppercase;
@@ -213,7 +263,8 @@ body {
         border: 1px solid var(--black);
         color: var(--white);
         font-weight: 600;
-        font-size: 0.87rem;
+        font-size: 0.8rem;
+        padding: 14px 20px;
     }
 
     .btn--outlined {
@@ -230,10 +281,26 @@ body {
         border: 1px solid var(--red);
         color: var(--white);
         font-weight: 600;
-        font-size: 0.87rem;
+        font-size: 0.8rem;
     }
-    p {
+    .btn-link {
         padding: 1rem;
     }
+    .btn--primary__hov a:hover {
+        background-color: var(--dark-red);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    .btn--outlined__hov a:hover {
+        background-color: var(--black);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    .btn--black__hov a:hover {
+        background-color: var(--black);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    
 
 /**** END Atom Styles ****/
