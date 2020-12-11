@@ -98,7 +98,7 @@ body {
     }
     h6 {
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 0.87em;
     }
 /**** END Typography Styles ****/
 
@@ -133,7 +133,7 @@ body {
     .footer--link__active {
         background-color: black;
         color: var(--light-grey);
-        font-size: .9 rem;
+        font-size: .87rem;
     }
     .footer--link__hov a:hover {
         color: var(--white);
@@ -457,11 +457,18 @@ body {
         margin: 0;
         padding-right: 20px;
     }
+    .social--nav__item a:hover {
+        color: var(--white);
+    }
     .social-link {
         color: var(--grey);
         font-size: 1.35rem;
     }
     .copyright {
+        font-size: .87rem;
         color: var(--grey);
         padding: 0;
+    }
+    .fa-copyright {
+        font-size: .7rem;;
     }
