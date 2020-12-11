@@ -1,0 +1,228 @@
+/***
+* Component Library
+* Developed By: Tyler Mann
+***/
+
+/****
+--Global CSS variables--
+****/
+html {
+    --font-sans-serif: 'Source Sans Pro', sans-serif;
+    --red: #E31B23;
+    --dark-red: #C8171E;
+    --black: #191919;
+    --grey: #9E9E9E;
+    --light-grey: #C8C8C8;
+    --white: #FFF;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+    font-family: var(--font-sans-serif);
+    line-height: 1.65;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--black);
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**** END Global CSS variables ****/
+
+
+/* Card Blocks */
+
+.three-image-block {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 2rem;
+    padding: 2rem;
+}
+.card--text {
+    max-width: 400px;
+    color: white;
+    padding: 2rem;
+}
+.card--afterpay {
+    background-image: url("../img/after-pay_600x@2x.progressive.webp");
+    background-size: cover;
+    background-position: top;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.card--rewards {
+    background-image: url("../img/rewards_600x@2x.progressive.webp");
+    background-size: cover;
+    background-position: top;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+.card--give-get {
+    background-image: url("../img/give-get_600x@2x.progressive.webp");
+    background-size: cover;
+    background-position: top;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.img-tint {
+    background-blend-mode: multiply;
+    background-color: rgba(0,0,0,.25);
+}
+.text__right {
+    text-align: right;
+}
+.text__center {
+    text-align: center;
+}
+.card-header--medium {
+    margin: 0;
+    padding: 1.25rem 0;
+}
+.card-header--small {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem 0;
+}
+.card-header--hero {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin: 0;
+    padding: 1.25rem 0;
+}
+.card-subtext {
+    line-height: 1.85rem;
+    margin: 0;
+    padding:0;
+}
+    /* Buttons */
+
+    .btn {
+        background-color: var(--black);
+        padding: 14px;
+        color: var(--white);
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 0;
+        
+    }
+
+    .btn--black {
+        border: 1px solid var(--black);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding: 15.7px 20px;
+        margin: 0;
+        min-width: 100px;
+    }
+
+    .btn--outlined {
+        background-color: transparent;
+        border: 1px solid var(--black);
+        color: var(--black);
+        padding: .8rem 4.5rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .btn--primary {
+        background-color: var(--red);
+        border: 1px solid var(--red);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .btn-link {
+        padding: 1rem 0;
+    }
+    .btn--primary__hov a:hover {
+        background-color: var(--dark-red);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    .btn--outlined__hov a:hover {
+        background-color: var(--black);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    .btn--black__hov a:hover {
+        background-color: var(--black);
+        color: var(--white);
+        text-decoration: none; 
+    }
+    
+    /**** 
+--TYPOGRAPHY-- 
+****/
+    /* Headers (h1, h2, h3 ,h4, h5, h6) */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-sans-serif);
+        line-height: 1.2;
+        font-weight: 800;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+    h4 {
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+    h5 {
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    h6 {
+        text-transform: uppercase;
+        font-size: 0.87em;
+    }
+/**** END Typography Styles ****/
+
+
+/**** 
+--LINKS-- 
+****/
+
+    /* Global Inline Links */
+    a {
+        color: var(--red);
+        text-decoration: none;
+    }
+     a:hover {
+        color: var(--dark-red);
+        text-decoration: underline;
+    }

@@ -33,11 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.image-blocks {
-    width: 100%;
-    display: grid;
-    grid-template-columns: minmax(repeat(1fr, 0));
-}
+
 /**** END Global CSS variables ****/
 
 
@@ -61,12 +57,9 @@ body {
         padding: 1rem;
         margin: 0;
     }
-    img {
-        display: block;
-    }
-
     .component img {
         max-width: initial;
+        display: block;
     }
     .component__img {
         border: 1px solid #C8C8C8;
@@ -225,10 +218,6 @@ body {
         margin: 0 25px;
         padding: 0 15px;
     }
-    .img-screenshot {
-        max-width: 900px;
-        margin: 20px;
-    }
 
     /* Logo */
     .site-logo {
@@ -318,14 +307,72 @@ body {
 
     /**** END Header Nav Styles ****/
 
-    /* Medium Card Text Area */
-    .card {
-        max-width: 400px;
+    
+/**** 
+--Organisms--
+****/
+
+    /* Card Blocks */
+
+    .three-image-block {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-column-gap: 2rem;
+        padding: 2rem;
     }
-    .card-text__right {
+    .card--text {
+        max-width: 400px;
+        color: white;
+        padding: 2rem;
+    }
+    .card--afterpay {
+        background-image: url("../img/after-pay_600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+    }
+
+    .card--rewards {
+        background-image: url("../img/rewards_600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+    }
+    .card--give-get {
+        background-image: url("../img/give-get_600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-tint {
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,.25);
+    }
+    .text__right {
         text-align: right;
     }
-    .card-text__center {
+    .text__center {
         text-align: center;
     }
     .card-header--medium {
@@ -393,30 +440,7 @@ body {
         color: var(--white);
     }
 
-/**** 
---Organisms--
-****/
 
-    .card--give-get {
-        color: var(--white);
-        position: relative;
-        align-items:center;
-        justify-content: center;
-        background-image: url("../img/give-get_300x@2x.progressive.jpg");
-        background-color: var(--black);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        /* max-width: 440px; */
-        height: 300px;
-        padding: 2rem;
-    }
-
-    .img-tint {
-        background-blend-mode: multiply;
-        background-color: rgba(0,0,0,.25);
-    }
 
     .email-subscription {
         width: 100%;
