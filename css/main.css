@@ -1,5 +1,5 @@
 /***
-* Component Library
+* Main CSS for Topo Design Case Study
 * Developed By: Tyler Mann
 ***/
 
@@ -307,12 +307,32 @@ body {
 
     /**** END Header Nav Styles ****/
 
-    
+
 /**** 
 --Organisms--
 ****/
 
     /* Card Blocks */
+
+    .hero {
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-column-gap: 2rem;
+        padding: 0 2rem 2rem;
+        margin: 0;
+    }
+
+    .two-image-block {
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-column-gap: 2rem;
+        padding: 0 2rem 2rem;
+        margin: 0;
+    }
 
     .three-image-block {
         width: 100%;
@@ -320,12 +340,122 @@ body {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-column-gap: 2rem;
-        padding: 2rem;
+        padding: 0 2rem 2rem;
+        margin: 0;
     }
     .card--text {
         max-width: 400px;
         color: white;
-        padding: 2rem;
+        padding: 3rem;
+    }
+    .card--sale {
+        grid-column: span 2;
+        background-image: url("../img/o-desktop_600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+    }
+
+    .card--outerwear {
+        background-image: url("../img/womes-apparel_600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+    }
+
+    .card--outerwear {
+        background-image: url("../img/womes-apparel_600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+    }
+    .card--bag-kits {
+        background-image: url("../img/travel_450x@2x.progressive.jpg");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+    }
+    .card--bags {
+        background-image: url("../img/packs&bags_450x@2x.progressive.jpg");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+    }
+    .card--mens {
+        background-image: url("../img/mens-600x@2x.progressive.jpg");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .card--womens {
+        background-image: url("../img/womens-600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+    }
+    .card--stocking {
+        background-image: url("../img/stocking-stuffers-desktop-1_600x@2x.progressive.webp");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+    }
+    .card--gift-guides {
+        background-image: url("../img/under-100_450x@2x.progressive.jpg");
+        background-size: cover;
+        background-position: top;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .card--afterpay {
         background-image: url("../img/after-pay_600x@2x.progressive.webp");
@@ -338,6 +468,7 @@ body {
         background-color: var(--black);
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .card--rewards {
@@ -351,6 +482,7 @@ body {
         background-color: var(--black);
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .card--give-get {
         background-image: url("../img/give-get_600x@2x.progressive.webp");
@@ -363,6 +495,7 @@ body {
         background-color: var(--black);
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .img-tint {
