@@ -98,7 +98,7 @@ body {
     }
     h6 {
         text-transform: uppercase;
-        font-size: .87em;
+        font-size: 1em;
     }
 /**** END Typography Styles ****/
 
@@ -131,7 +131,7 @@ body {
 
     /* Footer Links */
     .footer--link__active {
-        background-color: var(--black);
+        background-color: black;
         color: var(--light-grey);
         font-size: .9 rem;
     }
@@ -154,6 +154,7 @@ body {
         color: var(--white);
         text-decoration: none;
         text-transform: uppercase;
+        margin: 0;
         
     }
 
@@ -162,7 +163,8 @@ body {
         color: var(--white);
         font-weight: 600;
         font-size: 0.8rem;
-        padding: 14px 20px;
+        padding: 15.7px 20px;
+        margin: 0;
     }
 
     .btn--outlined {
@@ -248,7 +250,7 @@ body {
         margin: 0;
         padding: 0;
     }
-    li {
+    .main-nav--list li {
         display: inline-block;
     }
 
@@ -336,6 +338,43 @@ body {
         padding:0;
     }
 
+
+    /* Email Form */
+    form {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+    input {
+        width: 308px;
+        height: 50px;
+        border-radius: 0;
+        border: 1px solid var(--light-grey);
+        padding: 1rem;
+        margin-top: 2px;
+        font-weight: 300;
+        font-family: var(--font-sans-serif);
+        outline: none;
+        
+    }
+    ::placeholder {
+        color: var(--grey);
+        font-weight: 300;
+        font-family: var(--font-sans-serif);
+    }
+    :focus {
+        border: 1px solid var(--black);
+    }
+    button {
+        border: none;
+        padding: 0;
+    }
+
+/**** 
+--Organisms--
+****/
+
     .card--give-get {
         color: var(--white);
         position: relative;
@@ -354,4 +393,75 @@ body {
     .img-tint {
         background-blend-mode: multiply;
         background-color: rgba(0,0,0,.25);
+    }
+
+    .email-subscription {
+        width: 100%;
+        padding: 50px 0;
+        background-color: var(--red);
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .subscription--text {
+        color: var(--white);
+        padding: 0 25px 0 50px;
+
+    }
+    .subscription--text__header {
+        margin: 0;
+    }
+    .subscription--sign-up {
+        padding: 0 50px 0 25px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        width: 100%;
+    }
+    .footer {
+        width: 1200px;
+        padding: 0 3rem;
+    }
+    .footer--nav {
+        display: inline-flex;
+        padding: 0 2rem 2rem 0;
+        justify-content: flex-start;
+    }
+    .footer--item {
+        padding: 5px 0;
+    }
+    .footer--nav__header {
+        color: var(--white);
+        margin-bottom: 1rem;
+    }
+    .footer--nav__links {
+        list-style-type: none;
+        display: inline-block;
+        padding: 0 80px 0 0; 
+    }
+    .footer--social {
+        border-top: 1px solid var(--black);
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social--nav {
+        list-style-type: none;
+        display: inline-flex;
+        padding-left: 0;
+    }
+    .social--nav__item {
+        margin: 0;
+        padding-right: 20px;
+    }
+    .social-link {
+        color: var(--grey);
+        font-size: 1.35rem;
+    }
+    .copyright {
+        color: var(--grey);
+        padding: 0;
     }
