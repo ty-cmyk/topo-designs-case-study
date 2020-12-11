@@ -28,6 +28,16 @@ body {
     font-weight: 300;
     color: var(--black);
 }
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-blocks {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(repeat(1fr, 0));
+}
 /**** END Global CSS variables ****/
 
 
@@ -165,6 +175,7 @@ body {
         font-size: 0.8rem;
         padding: 15.7px 20px;
         margin: 0;
+        min-width: 100px;
     }
 
     .btn--outlined {
@@ -352,7 +363,6 @@ body {
         border-radius: 0;
         border: 1px solid var(--light-grey);
         padding: 1rem;
-        margin-top: 2px;
         font-weight: 300;
         font-family: var(--font-sans-serif);
         outline: none;
@@ -368,7 +378,19 @@ body {
     }
     button {
         border: none;
-        padding: 0;
+        border: 1px solid var(--black);
+        color: var(--white);
+        font-weight: 600;
+        font-size: 0.8rem;
+        padding: 16px 20px;
+        margin: 0;
+        min-width: 100px;
+        background-color: var(--black);
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    button a{
+        color: var(--white);
     }
 
 /**** 
@@ -385,7 +407,8 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        max-width: 440px;
+        overflow: hidden;
+        /* max-width: 440px; */
         height: 300px;
         padding: 2rem;
     }
@@ -424,11 +447,13 @@ body {
     .footer {
         width: 1200px;
         padding: 0 3rem;
+        
     }
     .footer--nav {
         display: inline-flex;
         padding: 0 2rem 2rem 0;
         justify-content: flex-start;
+        background-color: black;
     }
     .footer--item {
         padding: 5px 0;
